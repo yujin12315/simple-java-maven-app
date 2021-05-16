@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'mvn -B -gs setting.xnl -DskipTests clean package'
+                sh 'mvn -B -gs setting.xml -DskipTests clean package'
             }
         }
     }
